@@ -1,0 +1,1365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EfAssociationsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="EfAssociationsModelStoreContainer">
+    <EntitySet Name="NewA" EntityType="EfAssociationsModel.Store.NewA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewB" EntityType="EfAssociationsModel.Store.NewB" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewD_A" EntityType="EfAssociationsModel.Store.NewD_A" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewE_B" EntityType="EfAssociationsModel.Store.NewE_B" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewF_C" EntityType="EfAssociationsModel.Store.NewF_C" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewG_AB" EntityType="EfAssociationsModel.Store.NewG_AB" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewG_keyAB" EntityType="EfAssociationsModel.Store.NewG_keyAB" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewH_AC" EntityType="EfAssociationsModel.Store.NewH_AC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewH_keyAC" EntityType="EfAssociationsModel.Store.NewH_keyAC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewI_D_A" EntityType="EfAssociationsModel.Store.NewI_D_A" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewJ_DE_AB" EntityType="EfAssociationsModel.Store.NewJ_DE_AB" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewK_DF_AC" EntityType="EfAssociationsModel.Store.NewK_DF_AC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewL_G_AB" EntityType="EfAssociationsModel.Store.NewL_G_AB" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewM_H_AC" EntityType="EfAssociationsModel.Store.NewM_H_AC" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NewN_keyDEC_AB" EntityType="EfAssociationsModel.Store.NewN_keyDEC_AB" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="OldC" EntityType="EfAssociationsModel.Store.OldC" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_NewD_A_NewA" Association="EfAssociationsModel.Store.FK_NewD_A_NewA">
+      <End Role="NewA" EntitySet="NewA" />
+      <End Role="NewD_A" EntitySet="NewD_A" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewG_AB_NewA" Association="EfAssociationsModel.Store.FK_NewG_AB_NewA">
+      <End Role="NewA" EntitySet="NewA" />
+      <End Role="NewG_AB" EntitySet="NewG_AB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewG_keyAB_NewA" Association="EfAssociationsModel.Store.FK_NewG_keyAB_NewA">
+      <End Role="NewA" EntitySet="NewA" />
+      <End Role="NewG_keyAB" EntitySet="NewG_keyAB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewH_AC_NewA" Association="EfAssociationsModel.Store.FK_NewH_AC_NewA">
+      <End Role="NewA" EntitySet="NewA" />
+      <End Role="NewH_AC" EntitySet="NewH_AC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewH_keyAC_NewA" Association="EfAssociationsModel.Store.FK_NewH_keyAC_NewA">
+      <End Role="NewA" EntitySet="NewA" />
+      <End Role="NewH_keyAC" EntitySet="NewH_keyAC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewE_B_NewB" Association="EfAssociationsModel.Store.FK_NewE_B_NewB">
+      <End Role="NewB" EntitySet="NewB" />
+      <End Role="NewE_B" EntitySet="NewE_B" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewG_AB_NewB" Association="EfAssociationsModel.Store.FK_NewG_AB_NewB">
+      <End Role="NewB" EntitySet="NewB" />
+      <End Role="NewG_AB" EntitySet="NewG_AB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewG_keyAB_NewB" Association="EfAssociationsModel.Store.FK_NewG_keyAB_NewB">
+      <End Role="NewB" EntitySet="NewB" />
+      <End Role="NewG_keyAB" EntitySet="NewG_keyAB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewI_D_A_NewD_A" Association="EfAssociationsModel.Store.FK_NewI_D_A_NewD_A">
+      <End Role="NewD_A" EntitySet="NewD_A" />
+      <End Role="NewI_D_A" EntitySet="NewI_D_A" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewJ_DE_AB_NewD_A" Association="EfAssociationsModel.Store.FK_NewJ_DE_AB_NewD_A">
+      <End Role="NewD_A" EntitySet="NewD_A" />
+      <End Role="NewJ_DE_AB" EntitySet="NewJ_DE_AB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewK_DF_AC_NewD_A" Association="EfAssociationsModel.Store.FK_NewK_DF_AC_NewD_A">
+      <End Role="NewD_A" EntitySet="NewD_A" />
+      <End Role="NewK_DF_AC" EntitySet="NewK_DF_AC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewN_keyDEC_AB_NewD_A" Association="EfAssociationsModel.Store.FK_NewN_keyDEC_AB_NewD_A">
+      <End Role="NewD_A" EntitySet="NewD_A" />
+      <End Role="NewN_keyDEC_AB" EntitySet="NewN_keyDEC_AB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewJ_DE_AB_NewE_B" Association="EfAssociationsModel.Store.FK_NewJ_DE_AB_NewE_B">
+      <End Role="NewE_B" EntitySet="NewE_B" />
+      <End Role="NewJ_DE_AB" EntitySet="NewJ_DE_AB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewN_keyDEC_AB_NewE_B" Association="EfAssociationsModel.Store.FK_NewN_keyDEC_AB_NewE_B">
+      <End Role="NewE_B" EntitySet="NewE_B" />
+      <End Role="NewN_keyDEC_AB" EntitySet="NewN_keyDEC_AB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewF_C_OldC" Association="EfAssociationsModel.Store.FK_NewF_C_OldC">
+      <End Role="OldC" EntitySet="OldC" />
+      <End Role="NewF_C" EntitySet="NewF_C" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewK_DF_AC_NewF_C" Association="EfAssociationsModel.Store.FK_NewK_DF_AC_NewF_C">
+      <End Role="NewF_C" EntitySet="NewF_C" />
+      <End Role="NewK_DF_AC" EntitySet="NewK_DF_AC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewL_G_AB_NewG_AB" Association="EfAssociationsModel.Store.FK_NewL_G_AB_NewG_AB">
+      <End Role="NewG_AB" EntitySet="NewG_AB" />
+      <End Role="NewL_G_AB" EntitySet="NewL_G_AB" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewH_AC_OldC" Association="EfAssociationsModel.Store.FK_NewH_AC_OldC">
+      <End Role="OldC" EntitySet="OldC" />
+      <End Role="NewH_AC" EntitySet="NewH_AC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewM_H_AC_NewH_AC" Association="EfAssociationsModel.Store.FK_NewM_H_AC_NewH_AC">
+      <End Role="NewH_AC" EntitySet="NewH_AC" />
+      <End Role="NewM_H_AC" EntitySet="NewM_H_AC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewH_keyAC_OldC" Association="EfAssociationsModel.Store.FK_NewH_keyAC_OldC">
+      <End Role="OldC" EntitySet="OldC" />
+      <End Role="NewH_keyAC" EntitySet="NewH_keyAC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NewN_keyDEC_AB_OldC" Association="EfAssociationsModel.Store.FK_NewN_keyDEC_AB_OldC">
+      <End Role="OldC" EntitySet="OldC" />
+      <End Role="NewN_keyDEC_AB" EntitySet="NewN_keyDEC_AB" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="NewA">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewB">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewD_A">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewE_B">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewF_C">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewG_AB">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AId" Type="int" Nullable="false" />
+    <Property Name="BId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewG_keyAB">
+    <Key>
+      <PropertyRef Name="AId" />
+      <PropertyRef Name="BId" />
+    </Key>
+    <Property Name="AId" Type="int" Nullable="false" />
+    <Property Name="BId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewH_AC">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AId" Type="int" Nullable="false" />
+    <Property Name="CId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewH_keyAC">
+    <Key>
+      <PropertyRef Name="AId" />
+      <PropertyRef Name="CId" />
+    </Key>
+    <Property Name="AId" Type="int" Nullable="false" />
+    <Property Name="CId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewI_D_A">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewJ_DE_AB">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DId" Type="int" Nullable="false" />
+    <Property Name="EId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewK_DF_AC">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DId" Type="int" Nullable="false" />
+    <Property Name="FId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewL_G_AB">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewM_H_AC">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewN_keyDEC_AB">
+    <Key>
+      <PropertyRef Name="DId" />
+      <PropertyRef Name="EId" />
+      <PropertyRef Name="CId" />
+    </Key>
+    <Property Name="DId" Type="int" Nullable="false" />
+    <Property Name="EId" Type="int" Nullable="false" />
+    <Property Name="CId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OldC">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_NewD_A_NewA">
+    <End Role="NewA" Type="EfAssociationsModel.Store.NewA" Multiplicity="1" />
+    <End Role="NewD_A" Type="EfAssociationsModel.Store.NewD_A" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewA">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewD_A">
+        <PropertyRef Name="AId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewG_AB_NewA">
+    <End Role="NewA" Type="EfAssociationsModel.Store.NewA" Multiplicity="1" />
+    <End Role="NewG_AB" Type="EfAssociationsModel.Store.NewG_AB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewA">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewG_AB">
+        <PropertyRef Name="AId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewG_keyAB_NewA">
+    <End Role="NewA" Type="EfAssociationsModel.Store.NewA" Multiplicity="1" />
+    <End Role="NewG_keyAB" Type="EfAssociationsModel.Store.NewG_keyAB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewA">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewG_keyAB">
+        <PropertyRef Name="AId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewH_AC_NewA">
+    <End Role="NewA" Type="EfAssociationsModel.Store.NewA" Multiplicity="1" />
+    <End Role="NewH_AC" Type="EfAssociationsModel.Store.NewH_AC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewA">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewH_AC">
+        <PropertyRef Name="AId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewH_keyAC_NewA">
+    <End Role="NewA" Type="EfAssociationsModel.Store.NewA" Multiplicity="1" />
+    <End Role="NewH_keyAC" Type="EfAssociationsModel.Store.NewH_keyAC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewA">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewH_keyAC">
+        <PropertyRef Name="AId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewE_B_NewB">
+    <End Role="NewB" Type="EfAssociationsModel.Store.NewB" Multiplicity="1" />
+    <End Role="NewE_B" Type="EfAssociationsModel.Store.NewE_B" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewB">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewE_B">
+        <PropertyRef Name="BId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewG_AB_NewB">
+    <End Role="NewB" Type="EfAssociationsModel.Store.NewB" Multiplicity="1" />
+    <End Role="NewG_AB" Type="EfAssociationsModel.Store.NewG_AB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewB">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewG_AB">
+        <PropertyRef Name="BId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewG_keyAB_NewB">
+    <End Role="NewB" Type="EfAssociationsModel.Store.NewB" Multiplicity="1" />
+    <End Role="NewG_keyAB" Type="EfAssociationsModel.Store.NewG_keyAB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewB">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewG_keyAB">
+        <PropertyRef Name="BId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewI_D_A_NewD_A">
+    <End Role="NewD_A" Type="EfAssociationsModel.Store.NewD_A" Multiplicity="1" />
+    <End Role="NewI_D_A" Type="EfAssociationsModel.Store.NewI_D_A" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewD_A">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewI_D_A">
+        <PropertyRef Name="DId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewJ_DE_AB_NewD_A">
+    <End Role="NewD_A" Type="EfAssociationsModel.Store.NewD_A" Multiplicity="1" />
+    <End Role="NewJ_DE_AB" Type="EfAssociationsModel.Store.NewJ_DE_AB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewD_A">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewJ_DE_AB">
+        <PropertyRef Name="DId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewK_DF_AC_NewD_A">
+    <End Role="NewD_A" Type="EfAssociationsModel.Store.NewD_A" Multiplicity="1" />
+    <End Role="NewK_DF_AC" Type="EfAssociationsModel.Store.NewK_DF_AC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewD_A">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewK_DF_AC">
+        <PropertyRef Name="DId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewN_keyDEC_AB_NewD_A">
+    <End Role="NewD_A" Type="EfAssociationsModel.Store.NewD_A" Multiplicity="1" />
+    <End Role="NewN_keyDEC_AB" Type="EfAssociationsModel.Store.NewN_keyDEC_AB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewD_A">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewN_keyDEC_AB">
+        <PropertyRef Name="DId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewJ_DE_AB_NewE_B">
+    <End Role="NewE_B" Type="EfAssociationsModel.Store.NewE_B" Multiplicity="1" />
+    <End Role="NewJ_DE_AB" Type="EfAssociationsModel.Store.NewJ_DE_AB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewE_B">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewJ_DE_AB">
+        <PropertyRef Name="EId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewN_keyDEC_AB_NewE_B">
+    <End Role="NewE_B" Type="EfAssociationsModel.Store.NewE_B" Multiplicity="1" />
+    <End Role="NewN_keyDEC_AB" Type="EfAssociationsModel.Store.NewN_keyDEC_AB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewE_B">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewN_keyDEC_AB">
+        <PropertyRef Name="EId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewF_C_OldC">
+    <End Role="OldC" Type="EfAssociationsModel.Store.OldC" Multiplicity="1" />
+    <End Role="NewF_C" Type="EfAssociationsModel.Store.NewF_C" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OldC">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewF_C">
+        <PropertyRef Name="CId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewK_DF_AC_NewF_C">
+    <End Role="NewF_C" Type="EfAssociationsModel.Store.NewF_C" Multiplicity="1" />
+    <End Role="NewK_DF_AC" Type="EfAssociationsModel.Store.NewK_DF_AC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewF_C">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewK_DF_AC">
+        <PropertyRef Name="FId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewL_G_AB_NewG_AB">
+    <End Role="NewG_AB" Type="EfAssociationsModel.Store.NewG_AB" Multiplicity="1" />
+    <End Role="NewL_G_AB" Type="EfAssociationsModel.Store.NewL_G_AB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewG_AB">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewL_G_AB">
+        <PropertyRef Name="GId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewH_AC_OldC">
+    <End Role="OldC" Type="EfAssociationsModel.Store.OldC" Multiplicity="1" />
+    <End Role="NewH_AC" Type="EfAssociationsModel.Store.NewH_AC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OldC">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewH_AC">
+        <PropertyRef Name="CId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewM_H_AC_NewH_AC">
+    <End Role="NewH_AC" Type="EfAssociationsModel.Store.NewH_AC" Multiplicity="1" />
+    <End Role="NewM_H_AC" Type="EfAssociationsModel.Store.NewM_H_AC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewH_AC">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewM_H_AC">
+        <PropertyRef Name="HId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewH_keyAC_OldC">
+    <End Role="OldC" Type="EfAssociationsModel.Store.OldC" Multiplicity="1" />
+    <End Role="NewH_keyAC" Type="EfAssociationsModel.Store.NewH_keyAC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OldC">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewH_keyAC">
+        <PropertyRef Name="CId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NewN_keyDEC_AB_OldC">
+    <End Role="OldC" Type="EfAssociationsModel.Store.OldC" Multiplicity="1" />
+    <End Role="NewN_keyDEC_AB" Type="EfAssociationsModel.Store.NewN_keyDEC_AB" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OldC">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="NewN_keyDEC_AB">
+        <PropertyRef Name="CId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="EfAssociationsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="EfEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="NewA" EntityType="EfAssociationsModel.NewA" />
+          <EntitySet Name="NewB" EntityType="EfAssociationsModel.NewB" />
+          <EntitySet Name="NewD_A" EntityType="EfAssociationsModel.NewD_A" />
+          <EntitySet Name="NewE_B" EntityType="EfAssociationsModel.NewE_B" />
+          <EntitySet Name="NewF_C" EntityType="EfAssociationsModel.NewF_C" />
+          <EntitySet Name="NewG_AB" EntityType="EfAssociationsModel.NewG_AB" />
+          <EntitySet Name="NewG_keyAB" EntityType="EfAssociationsModel.NewG_keyAB" />
+          <EntitySet Name="NewH_AC" EntityType="EfAssociationsModel.NewH_AC" />
+          <EntitySet Name="NewH_keyAC" EntityType="EfAssociationsModel.NewH_keyAC" />
+          <EntitySet Name="NewI_D_A" EntityType="EfAssociationsModel.NewI_D_A" />
+          <EntitySet Name="NewJ_DE_AB" EntityType="EfAssociationsModel.NewJ_DE_AB" />
+          <EntitySet Name="NewK_DF_AC" EntityType="EfAssociationsModel.NewK_DF_AC" />
+          <EntitySet Name="NewL_G_AB" EntityType="EfAssociationsModel.NewL_G_AB" />
+          <EntitySet Name="NewM_H_AC" EntityType="EfAssociationsModel.NewM_H_AC" />
+          <EntitySet Name="NewN_keyDEC_AB" EntityType="EfAssociationsModel.NewN_keyDEC_AB" />
+          <EntitySet Name="OldC" EntityType="EfAssociationsModel.OldC" />
+          <AssociationSet Name="FK_NewD_A_NewA" Association="EfAssociationsModel.FK_NewD_A_NewA">
+            <End Role="NewA" EntitySet="NewA" />
+            <End Role="NewD_A" EntitySet="NewD_A" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewG_AB_NewA" Association="EfAssociationsModel.FK_NewG_AB_NewA">
+            <End Role="NewA" EntitySet="NewA" />
+            <End Role="NewG_AB" EntitySet="NewG_AB" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewG_keyAB_NewA" Association="EfAssociationsModel.FK_NewG_keyAB_NewA">
+            <End Role="NewA" EntitySet="NewA" />
+            <End Role="NewG_keyAB" EntitySet="NewG_keyAB" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewH_AC_NewA" Association="EfAssociationsModel.FK_NewH_AC_NewA">
+            <End Role="NewA" EntitySet="NewA" />
+            <End Role="NewH_AC" EntitySet="NewH_AC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewH_keyAC_NewA" Association="EfAssociationsModel.FK_NewH_keyAC_NewA">
+            <End Role="NewA" EntitySet="NewA" />
+            <End Role="NewH_keyAC" EntitySet="NewH_keyAC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewE_B_NewB" Association="EfAssociationsModel.FK_NewE_B_NewB">
+            <End Role="NewB" EntitySet="NewB" />
+            <End Role="NewE_B" EntitySet="NewE_B" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewG_AB_NewB" Association="EfAssociationsModel.FK_NewG_AB_NewB">
+            <End Role="NewB" EntitySet="NewB" />
+            <End Role="NewG_AB" EntitySet="NewG_AB" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewG_keyAB_NewB" Association="EfAssociationsModel.FK_NewG_keyAB_NewB">
+            <End Role="NewB" EntitySet="NewB" />
+            <End Role="NewG_keyAB" EntitySet="NewG_keyAB" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewI_D_A_NewD_A" Association="EfAssociationsModel.FK_NewI_D_A_NewD_A">
+            <End Role="NewD_A" EntitySet="NewD_A" />
+            <End Role="NewI_D_A" EntitySet="NewI_D_A" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewJ_DE_AB_NewD_A" Association="EfAssociationsModel.FK_NewJ_DE_AB_NewD_A">
+            <End Role="NewD_A" EntitySet="NewD_A" />
+            <End Role="NewJ_DE_AB" EntitySet="NewJ_DE_AB" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewK_DF_AC_NewD_A" Association="EfAssociationsModel.FK_NewK_DF_AC_NewD_A">
+            <End Role="NewD_A" EntitySet="NewD_A" />
+            <End Role="NewK_DF_AC" EntitySet="NewK_DF_AC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewN_keyDEC_AB_NewD_A" Association="EfAssociationsModel.FK_NewN_keyDEC_AB_NewD_A">
+            <End Role="NewD_A" EntitySet="NewD_A" />
+            <End Role="NewN_keyDEC_AB" EntitySet="NewN_keyDEC_AB" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewJ_DE_AB_NewE_B" Association="EfAssociationsModel.FK_NewJ_DE_AB_NewE_B">
+            <End Role="NewE_B" EntitySet="NewE_B" />
+            <End Role="NewJ_DE_AB" EntitySet="NewJ_DE_AB" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewN_keyDEC_AB_NewE_B" Association="EfAssociationsModel.FK_NewN_keyDEC_AB_NewE_B">
+            <End Role="NewE_B" EntitySet="NewE_B" />
+            <End Role="NewN_keyDEC_AB" EntitySet="NewN_keyDEC_AB" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewF_C_OldC" Association="EfAssociationsModel.FK_NewF_C_OldC">
+            <End Role="OldC" EntitySet="OldC" />
+            <End Role="NewF_C" EntitySet="NewF_C" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewK_DF_AC_NewF_C" Association="EfAssociationsModel.FK_NewK_DF_AC_NewF_C">
+            <End Role="NewF_C" EntitySet="NewF_C" />
+            <End Role="NewK_DF_AC" EntitySet="NewK_DF_AC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewL_G_AB_NewG_AB" Association="EfAssociationsModel.FK_NewL_G_AB_NewG_AB">
+            <End Role="NewG_AB" EntitySet="NewG_AB" />
+            <End Role="NewL_G_AB" EntitySet="NewL_G_AB" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewH_AC_OldC" Association="EfAssociationsModel.FK_NewH_AC_OldC">
+            <End Role="OldC" EntitySet="OldC" />
+            <End Role="NewH_AC" EntitySet="NewH_AC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewM_H_AC_NewH_AC" Association="EfAssociationsModel.FK_NewM_H_AC_NewH_AC">
+            <End Role="NewH_AC" EntitySet="NewH_AC" />
+            <End Role="NewM_H_AC" EntitySet="NewM_H_AC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewH_keyAC_OldC" Association="EfAssociationsModel.FK_NewH_keyAC_OldC">
+            <End Role="OldC" EntitySet="OldC" />
+            <End Role="NewH_keyAC" EntitySet="NewH_keyAC" />
+          </AssociationSet>
+          <AssociationSet Name="FK_NewN_keyDEC_AB_OldC" Association="EfAssociationsModel.FK_NewN_keyDEC_AB_OldC">
+            <End Role="OldC" EntitySet="OldC" />
+            <End Role="NewN_keyDEC_AB" EntitySet="NewN_keyDEC_AB" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="NewA">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewD_A" Relationship="EfAssociationsModel.FK_NewD_A_NewA" FromRole="NewA" ToRole="NewD_A" />
+          <NavigationProperty Name="NewG_AB" Relationship="EfAssociationsModel.FK_NewG_AB_NewA" FromRole="NewA" ToRole="NewG_AB" />
+          <NavigationProperty Name="NewG_keyAB" Relationship="EfAssociationsModel.FK_NewG_keyAB_NewA" FromRole="NewA" ToRole="NewG_keyAB" />
+          <NavigationProperty Name="NewH_AC" Relationship="EfAssociationsModel.FK_NewH_AC_NewA" FromRole="NewA" ToRole="NewH_AC" />
+          <NavigationProperty Name="NewH_keyAC" Relationship="EfAssociationsModel.FK_NewH_keyAC_NewA" FromRole="NewA" ToRole="NewH_keyAC" />
+        </EntityType>
+        <EntityType Name="NewB">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewE_B" Relationship="EfAssociationsModel.FK_NewE_B_NewB" FromRole="NewB" ToRole="NewE_B" />
+          <NavigationProperty Name="NewG_AB" Relationship="EfAssociationsModel.FK_NewG_AB_NewB" FromRole="NewB" ToRole="NewG_AB" />
+          <NavigationProperty Name="NewG_keyAB" Relationship="EfAssociationsModel.FK_NewG_keyAB_NewB" FromRole="NewB" ToRole="NewG_keyAB" />
+        </EntityType>
+        <EntityType Name="NewD_A">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewA" Relationship="EfAssociationsModel.FK_NewD_A_NewA" FromRole="NewD_A" ToRole="NewA" />
+          <NavigationProperty Name="NewI_D_A" Relationship="EfAssociationsModel.FK_NewI_D_A_NewD_A" FromRole="NewD_A" ToRole="NewI_D_A" />
+          <NavigationProperty Name="NewJ_DE_AB" Relationship="EfAssociationsModel.FK_NewJ_DE_AB_NewD_A" FromRole="NewD_A" ToRole="NewJ_DE_AB" />
+          <NavigationProperty Name="NewK_DF_AC" Relationship="EfAssociationsModel.FK_NewK_DF_AC_NewD_A" FromRole="NewD_A" ToRole="NewK_DF_AC" />
+          <NavigationProperty Name="NewN_keyDEC_AB" Relationship="EfAssociationsModel.FK_NewN_keyDEC_AB_NewD_A" FromRole="NewD_A" ToRole="NewN_keyDEC_AB" />
+        </EntityType>
+        <EntityType Name="NewE_B">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewB" Relationship="EfAssociationsModel.FK_NewE_B_NewB" FromRole="NewE_B" ToRole="NewB" />
+          <NavigationProperty Name="NewJ_DE_AB" Relationship="EfAssociationsModel.FK_NewJ_DE_AB_NewE_B" FromRole="NewE_B" ToRole="NewJ_DE_AB" />
+          <NavigationProperty Name="NewN_keyDEC_AB" Relationship="EfAssociationsModel.FK_NewN_keyDEC_AB_NewE_B" FromRole="NewE_B" ToRole="NewN_keyDEC_AB" />
+        </EntityType>
+        <EntityType Name="NewF_C">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="OldC" Relationship="EfAssociationsModel.FK_NewF_C_OldC" FromRole="NewF_C" ToRole="OldC" />
+          <NavigationProperty Name="NewK_DF_AC" Relationship="EfAssociationsModel.FK_NewK_DF_AC_NewF_C" FromRole="NewF_C" ToRole="NewK_DF_AC" />
+        </EntityType>
+        <EntityType Name="NewG_AB">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AId" Type="Int32" Nullable="false" />
+          <Property Name="BId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewA" Relationship="EfAssociationsModel.FK_NewG_AB_NewA" FromRole="NewG_AB" ToRole="NewA" />
+          <NavigationProperty Name="NewB" Relationship="EfAssociationsModel.FK_NewG_AB_NewB" FromRole="NewG_AB" ToRole="NewB" />
+          <NavigationProperty Name="NewL_G_AB" Relationship="EfAssociationsModel.FK_NewL_G_AB_NewG_AB" FromRole="NewG_AB" ToRole="NewL_G_AB" />
+        </EntityType>
+        <EntityType Name="NewG_keyAB">
+          <Key>
+            <PropertyRef Name="AId" />
+            <PropertyRef Name="BId" />
+          </Key>
+          <Property Name="AId" Type="Int32" Nullable="false" />
+          <Property Name="BId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewA" Relationship="EfAssociationsModel.FK_NewG_keyAB_NewA" FromRole="NewG_keyAB" ToRole="NewA" />
+          <NavigationProperty Name="NewB" Relationship="EfAssociationsModel.FK_NewG_keyAB_NewB" FromRole="NewG_keyAB" ToRole="NewB" />
+        </EntityType>
+        <EntityType Name="NewH_AC">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AId" Type="Int32" Nullable="false" />
+          <Property Name="CId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewA" Relationship="EfAssociationsModel.FK_NewH_AC_NewA" FromRole="NewH_AC" ToRole="NewA" />
+          <NavigationProperty Name="OldC" Relationship="EfAssociationsModel.FK_NewH_AC_OldC" FromRole="NewH_AC" ToRole="OldC" />
+          <NavigationProperty Name="NewM_H_AC" Relationship="EfAssociationsModel.FK_NewM_H_AC_NewH_AC" FromRole="NewH_AC" ToRole="NewM_H_AC" />
+        </EntityType>
+        <EntityType Name="NewH_keyAC">
+          <Key>
+            <PropertyRef Name="AId" />
+            <PropertyRef Name="CId" />
+          </Key>
+          <Property Name="AId" Type="Int32" Nullable="false" />
+          <Property Name="CId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewA" Relationship="EfAssociationsModel.FK_NewH_keyAC_NewA" FromRole="NewH_keyAC" ToRole="NewA" />
+          <NavigationProperty Name="OldC" Relationship="EfAssociationsModel.FK_NewH_keyAC_OldC" FromRole="NewH_keyAC" ToRole="OldC" />
+        </EntityType>
+        <EntityType Name="NewI_D_A">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewD_A" Relationship="EfAssociationsModel.FK_NewI_D_A_NewD_A" FromRole="NewI_D_A" ToRole="NewD_A" />
+        </EntityType>
+        <EntityType Name="NewJ_DE_AB">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DId" Type="Int32" Nullable="false" />
+          <Property Name="EId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewD_A" Relationship="EfAssociationsModel.FK_NewJ_DE_AB_NewD_A" FromRole="NewJ_DE_AB" ToRole="NewD_A" />
+          <NavigationProperty Name="NewE_B" Relationship="EfAssociationsModel.FK_NewJ_DE_AB_NewE_B" FromRole="NewJ_DE_AB" ToRole="NewE_B" />
+        </EntityType>
+        <EntityType Name="NewK_DF_AC">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DId" Type="Int32" Nullable="false" />
+          <Property Name="FId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewD_A" Relationship="EfAssociationsModel.FK_NewK_DF_AC_NewD_A" FromRole="NewK_DF_AC" ToRole="NewD_A" />
+          <NavigationProperty Name="NewF_C" Relationship="EfAssociationsModel.FK_NewK_DF_AC_NewF_C" FromRole="NewK_DF_AC" ToRole="NewF_C" />
+        </EntityType>
+        <EntityType Name="NewL_G_AB">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewG_AB" Relationship="EfAssociationsModel.FK_NewL_G_AB_NewG_AB" FromRole="NewL_G_AB" ToRole="NewG_AB" />
+        </EntityType>
+        <EntityType Name="NewM_H_AC">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewH_AC" Relationship="EfAssociationsModel.FK_NewM_H_AC_NewH_AC" FromRole="NewM_H_AC" ToRole="NewH_AC" />
+        </EntityType>
+        <EntityType Name="NewN_keyDEC_AB">
+          <Key>
+            <PropertyRef Name="DId" />
+            <PropertyRef Name="EId" />
+            <PropertyRef Name="CId" />
+          </Key>
+          <Property Name="DId" Type="Int32" Nullable="false" />
+          <Property Name="EId" Type="Int32" Nullable="false" />
+          <Property Name="CId" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewD_A" Relationship="EfAssociationsModel.FK_NewN_keyDEC_AB_NewD_A" FromRole="NewN_keyDEC_AB" ToRole="NewD_A" />
+          <NavigationProperty Name="NewE_B" Relationship="EfAssociationsModel.FK_NewN_keyDEC_AB_NewE_B" FromRole="NewN_keyDEC_AB" ToRole="NewE_B" />
+          <NavigationProperty Name="OldC" Relationship="EfAssociationsModel.FK_NewN_keyDEC_AB_OldC" FromRole="NewN_keyDEC_AB" ToRole="OldC" />
+        </EntityType>
+        <EntityType Name="OldC">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NewF_C" Relationship="EfAssociationsModel.FK_NewF_C_OldC" FromRole="OldC" ToRole="NewF_C" />
+          <NavigationProperty Name="NewH_AC" Relationship="EfAssociationsModel.FK_NewH_AC_OldC" FromRole="OldC" ToRole="NewH_AC" />
+          <NavigationProperty Name="NewH_keyAC" Relationship="EfAssociationsModel.FK_NewH_keyAC_OldC" FromRole="OldC" ToRole="NewH_keyAC" />
+          <NavigationProperty Name="NewN_keyDEC_AB" Relationship="EfAssociationsModel.FK_NewN_keyDEC_AB_OldC" FromRole="OldC" ToRole="NewN_keyDEC_AB" />
+        </EntityType>
+        <Association Name="FK_NewD_A_NewA">
+          <End Role="NewA" Type="EfAssociationsModel.NewA" Multiplicity="1" />
+          <End Role="NewD_A" Type="EfAssociationsModel.NewD_A" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewA">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewD_A">
+              <PropertyRef Name="AId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewG_AB_NewA">
+          <End Role="NewA" Type="EfAssociationsModel.NewA" Multiplicity="1" />
+          <End Role="NewG_AB" Type="EfAssociationsModel.NewG_AB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewA">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewG_AB">
+              <PropertyRef Name="AId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewG_keyAB_NewA">
+          <End Role="NewA" Type="EfAssociationsModel.NewA" Multiplicity="1" />
+          <End Role="NewG_keyAB" Type="EfAssociationsModel.NewG_keyAB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewA">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewG_keyAB">
+              <PropertyRef Name="AId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewH_AC_NewA">
+          <End Role="NewA" Type="EfAssociationsModel.NewA" Multiplicity="1" />
+          <End Role="NewH_AC" Type="EfAssociationsModel.NewH_AC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewA">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewH_AC">
+              <PropertyRef Name="AId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewH_keyAC_NewA">
+          <End Role="NewA" Type="EfAssociationsModel.NewA" Multiplicity="1" />
+          <End Role="NewH_keyAC" Type="EfAssociationsModel.NewH_keyAC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewA">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewH_keyAC">
+              <PropertyRef Name="AId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewE_B_NewB">
+          <End Role="NewB" Type="EfAssociationsModel.NewB" Multiplicity="1" />
+          <End Role="NewE_B" Type="EfAssociationsModel.NewE_B" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewB">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewE_B">
+              <PropertyRef Name="BId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewG_AB_NewB">
+          <End Role="NewB" Type="EfAssociationsModel.NewB" Multiplicity="1" />
+          <End Role="NewG_AB" Type="EfAssociationsModel.NewG_AB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewB">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewG_AB">
+              <PropertyRef Name="BId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewG_keyAB_NewB">
+          <End Role="NewB" Type="EfAssociationsModel.NewB" Multiplicity="1" />
+          <End Role="NewG_keyAB" Type="EfAssociationsModel.NewG_keyAB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewB">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewG_keyAB">
+              <PropertyRef Name="BId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewI_D_A_NewD_A">
+          <End Role="NewD_A" Type="EfAssociationsModel.NewD_A" Multiplicity="1" />
+          <End Role="NewI_D_A" Type="EfAssociationsModel.NewI_D_A" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewD_A">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewI_D_A">
+              <PropertyRef Name="DId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewJ_DE_AB_NewD_A">
+          <End Role="NewD_A" Type="EfAssociationsModel.NewD_A" Multiplicity="1" />
+          <End Role="NewJ_DE_AB" Type="EfAssociationsModel.NewJ_DE_AB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewD_A">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewJ_DE_AB">
+              <PropertyRef Name="DId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewK_DF_AC_NewD_A">
+          <End Role="NewD_A" Type="EfAssociationsModel.NewD_A" Multiplicity="1" />
+          <End Role="NewK_DF_AC" Type="EfAssociationsModel.NewK_DF_AC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewD_A">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewK_DF_AC">
+              <PropertyRef Name="DId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewN_keyDEC_AB_NewD_A">
+          <End Role="NewD_A" Type="EfAssociationsModel.NewD_A" Multiplicity="1" />
+          <End Role="NewN_keyDEC_AB" Type="EfAssociationsModel.NewN_keyDEC_AB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewD_A">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewN_keyDEC_AB">
+              <PropertyRef Name="DId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewJ_DE_AB_NewE_B">
+          <End Role="NewE_B" Type="EfAssociationsModel.NewE_B" Multiplicity="1" />
+          <End Role="NewJ_DE_AB" Type="EfAssociationsModel.NewJ_DE_AB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewE_B">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewJ_DE_AB">
+              <PropertyRef Name="EId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewN_keyDEC_AB_NewE_B">
+          <End Role="NewE_B" Type="EfAssociationsModel.NewE_B" Multiplicity="1" />
+          <End Role="NewN_keyDEC_AB" Type="EfAssociationsModel.NewN_keyDEC_AB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewE_B">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewN_keyDEC_AB">
+              <PropertyRef Name="EId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewF_C_OldC">
+          <End Role="OldC" Type="EfAssociationsModel.OldC" Multiplicity="1" />
+          <End Role="NewF_C" Type="EfAssociationsModel.NewF_C" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OldC">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewF_C">
+              <PropertyRef Name="CId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewK_DF_AC_NewF_C">
+          <End Role="NewF_C" Type="EfAssociationsModel.NewF_C" Multiplicity="1" />
+          <End Role="NewK_DF_AC" Type="EfAssociationsModel.NewK_DF_AC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewF_C">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewK_DF_AC">
+              <PropertyRef Name="FId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewL_G_AB_NewG_AB">
+          <End Role="NewG_AB" Type="EfAssociationsModel.NewG_AB" Multiplicity="1" />
+          <End Role="NewL_G_AB" Type="EfAssociationsModel.NewL_G_AB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewG_AB">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewL_G_AB">
+              <PropertyRef Name="GId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewH_AC_OldC">
+          <End Role="OldC" Type="EfAssociationsModel.OldC" Multiplicity="1" />
+          <End Role="NewH_AC" Type="EfAssociationsModel.NewH_AC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OldC">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewH_AC">
+              <PropertyRef Name="CId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewM_H_AC_NewH_AC">
+          <End Role="NewH_AC" Type="EfAssociationsModel.NewH_AC" Multiplicity="1" />
+          <End Role="NewM_H_AC" Type="EfAssociationsModel.NewM_H_AC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NewH_AC">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewM_H_AC">
+              <PropertyRef Name="HId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewH_keyAC_OldC">
+          <End Role="OldC" Type="EfAssociationsModel.OldC" Multiplicity="1" />
+          <End Role="NewH_keyAC" Type="EfAssociationsModel.NewH_keyAC" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OldC">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewH_keyAC">
+              <PropertyRef Name="CId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_NewN_keyDEC_AB_OldC">
+          <End Role="OldC" Type="EfAssociationsModel.OldC" Multiplicity="1" />
+          <End Role="NewN_keyDEC_AB" Type="EfAssociationsModel.NewN_keyDEC_AB" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="OldC">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="NewN_keyDEC_AB">
+              <PropertyRef Name="CId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EfAssociationsModelStoreContainer" CdmEntityContainer="EfEntities">
+    <EntitySetMapping Name="NewA">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewA)">
+        <MappingFragment StoreEntitySet="NewA">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewB">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewB)">
+        <MappingFragment StoreEntitySet="NewB">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewD_A">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewD_A)">
+        <MappingFragment StoreEntitySet="NewD_A">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AId" ColumnName="AId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewE_B">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewE_B)">
+        <MappingFragment StoreEntitySet="NewE_B">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BId" ColumnName="BId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewF_C">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewF_C)">
+        <MappingFragment StoreEntitySet="NewF_C">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CId" ColumnName="CId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewG_AB">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewG_AB)">
+        <MappingFragment StoreEntitySet="NewG_AB">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AId" ColumnName="AId" />
+          <ScalarProperty Name="BId" ColumnName="BId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewG_keyAB">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewG_keyAB)">
+        <MappingFragment StoreEntitySet="NewG_keyAB">
+          <ScalarProperty Name="AId" ColumnName="AId" />
+          <ScalarProperty Name="BId" ColumnName="BId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewH_AC">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewH_AC)">
+        <MappingFragment StoreEntitySet="NewH_AC">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AId" ColumnName="AId" />
+          <ScalarProperty Name="CId" ColumnName="CId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewH_keyAC">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewH_keyAC)">
+        <MappingFragment StoreEntitySet="NewH_keyAC">
+          <ScalarProperty Name="AId" ColumnName="AId" />
+          <ScalarProperty Name="CId" ColumnName="CId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewI_D_A">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewI_D_A)">
+        <MappingFragment StoreEntitySet="NewI_D_A">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DId" ColumnName="DId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewJ_DE_AB">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewJ_DE_AB)">
+        <MappingFragment StoreEntitySet="NewJ_DE_AB">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DId" ColumnName="DId" />
+          <ScalarProperty Name="EId" ColumnName="EId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewK_DF_AC">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewK_DF_AC)">
+        <MappingFragment StoreEntitySet="NewK_DF_AC">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DId" ColumnName="DId" />
+          <ScalarProperty Name="FId" ColumnName="FId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewL_G_AB">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewL_G_AB)">
+        <MappingFragment StoreEntitySet="NewL_G_AB">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GId" ColumnName="GId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewM_H_AC">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewM_H_AC)">
+        <MappingFragment StoreEntitySet="NewM_H_AC">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HId" ColumnName="HId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewN_keyDEC_AB">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.NewN_keyDEC_AB)">
+        <MappingFragment StoreEntitySet="NewN_keyDEC_AB">
+          <ScalarProperty Name="DId" ColumnName="DId" />
+          <ScalarProperty Name="EId" ColumnName="EId" />
+          <ScalarProperty Name="CId" ColumnName="CId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OldC">
+      <EntityTypeMapping TypeName="IsTypeOf(EfAssociationsModel.OldC)">
+        <MappingFragment StoreEntitySet="OldC">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model">
+        <EntityTypeShape EntityType="EfAssociationsModel.NewA" Width="1.5" PointX="0.75" PointY="12" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewB" Width="1.5" PointX="0.75" PointY="8.125" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewD_A" Width="1.5" PointX="3" PointY="11.875" Height="2.5571907552083317" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewE_B" Width="1.5" PointX="3" PointY="4.125" Height="2.1725878906249996" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewF_C" Width="1.5" PointX="3" PointY="18.125" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewG_AB" Width="1.5" PointX="3" PointY="8" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewG_keyAB" Width="1.5" PointX="3" PointY="15.125" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewH_AC" Width="1.5" PointX="8" PointY="8" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewH_keyAC" Width="1.5" PointX="8" PointY="15.125" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewI_D_A" Width="1.5" PointX="5.25" PointY="12.25" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewJ_DE_AB" Width="1.5" PointX="5.25" PointY="9.125" Height="2.1725878906250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewK_DF_AC" Width="1.5" PointX="5.25" PointY="15.125" Height="2.1725878906250031" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewL_G_AB" Width="1.5" PointX="5.25" PointY="6.25" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewM_H_AC" Width="1.5" PointX="10.25" PointY="8.25" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.NewN_keyDEC_AB" Width="1.5" PointX="8.25" PointY="12" Height="2.3648893229166674" IsExpanded="true" />
+        <EntityTypeShape EntityType="EfAssociationsModel.OldC" Width="1.5" PointX="5.75" PointY="3.125" Height="2.1725878906250031" IsExpanded="true" />
+        <AssociationConnector Association="EfAssociationsModel.FK_NewD_A_NewA" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="13.182444661458334" />
+          <ConnectorPoint PointX="2.6041666666666665" PointY="13.182444661458334" />
+          <ConnectorPoint PointX="2.8333333333333335" PointY="13.182444661458334" />
+          <ConnectorPoint PointX="3" PointY="13.182444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewG_AB_NewA" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="12.001152846153847" />
+          <ConnectorPoint PointX="2.625" PointY="11.626152846153847" />
+          <ConnectorPoint PointX="2.625" PointY="9.1824446614583337" />
+          <ConnectorPoint PointX="3" PointY="9.1824446614583337" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewG_keyAB_NewA" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="14.364889322916667" />
+          <ConnectorPoint PointX="1.5" PointY="16.115143229166666" />
+          <ConnectorPoint PointX="3" PointY="16.115143229166666" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewH_AC_NewA" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="13.8049189921875" />
+          <ConnectorPoint PointX="2.75" PointY="13.8049189921875" />
+          <ConnectorPoint PointX="2.75" PointY="11.625" />
+          <ConnectorPoint PointX="4.6678195128205138" PointY="11.625" />
+          <ConnectorPoint PointX="4.83448617948718" PointY="11.625" />
+          <ConnectorPoint PointX="6.8072891666666671" PointY="11.624999999999998" />
+          <ConnectorPoint PointX="7.1145833333333321" PointY="11.625" />
+          <ConnectorPoint PointX="7.541666666666667" PointY="11.625" />
+          <ConnectorPoint PointX="7.708333333333333" PointY="11.625" />
+          <ConnectorPoint PointX="8.75" PointY="11.625" />
+          <ConnectorPoint PointX="8.75" PointY="10.364889322916667" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewH_keyAC_NewA" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.2499999999999996" PointY="14.364889322916667" />
+          <ConnectorPoint PointX="2.625" PointY="14.739889322916667" />
+          <ConnectorPoint PointX="4.7243652343750027" PointY="14.739889322916667" />
+          <ConnectorPoint PointX="4.8910319010416687" PointY="14.739889322916667" />
+          <ConnectorPoint PointX="6.947916666666667" PointY="14.739889322916667" />
+          <ConnectorPoint PointX="7.114583333333333" PointY="14.739889322916667" />
+          <ConnectorPoint PointX="7.541666666666667" PointY="14.739889322916667" />
+          <ConnectorPoint PointX="7.708333333333333" PointY="14.739889322916667" />
+          <ConnectorPoint PointX="8.75" PointY="14.739889322916667" />
+          <ConnectorPoint PointX="8.75" PointY="15.125" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewE_B_NewB" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="8.125" />
+          <ConnectorPoint PointX="1.5" PointY="5.2112939453125" />
+          <ConnectorPoint PointX="3" PointY="5.2112939453125" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewG_AB_NewB" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="8.5912223307291669" />
+          <ConnectorPoint PointX="3" PointY="8.5912223307291669" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewG_keyAB_NewB" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="10.04297776602564" />
+          <ConnectorPoint PointX="2.5660744349011213" PointY="10.35905220092676" />
+          <ConnectorPoint PointX="2.6839255650988791" PointY="10.476903331124518" />
+          <ConnectorPoint PointX="2.6875" PointY="10.48047776602564" />
+          <ConnectorPoint PointX="2.6875" PointY="15.588819614583333" />
+          <ConnectorPoint PointX="3" PointY="15.588819614583333" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewI_D_A_NewD_A" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="13.143992513020834" />
+          <ConnectorPoint PointX="5.25" PointY="13.143992513020834" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewJ_DE_AB_NewD_A" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="11.876152846153847" />
+          <ConnectorPoint PointX="4.875" PointY="11.501152846153847" />
+          <ConnectorPoint PointX="4.875" PointY="11.67374073677885" />
+          <ConnectorPoint PointX="5.2511528461538459" PointY="11.297587890625003" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewK_DF_AC_NewD_A" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="14.432190755208332" />
+          <ConnectorPoint PointX="4.875" PointY="14.807190755208332" />
+          <ConnectorPoint PointX="4.875" PointY="14.748847153846153" />
+          <ConnectorPoint PointX="5.2511528461538459" PointY="15.125" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewN_keyDEC_AB_NewD_A" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="14.232687174479167" />
+          <ConnectorPoint PointX="6.947916666666667" PointY="14.232687174479167" />
+          <ConnectorPoint PointX="7.114583333333333" PointY="14.232687174479167" />
+          <ConnectorPoint PointX="7.541666666666667" PointY="14.232687174479167" />
+          <ConnectorPoint PointX="7.708333333333333" PointY="14.232687174479167" />
+          <ConnectorPoint PointX="8.25" PointY="14.232687174479167" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewJ_DE_AB_NewE_B" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="6.297587890625" />
+          <ConnectorPoint PointX="4.875" PointY="6.672587890625" />
+          <ConnectorPoint PointX="4.875" PointY="10.211293945312502" />
+          <ConnectorPoint PointX="5.25" PointY="10.211293945312502" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewN_keyDEC_AB_NewE_B" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="5.7737939453125016" />
+          <ConnectorPoint PointX="6.8072891666666671" PointY="5.7737939453125" />
+          <ConnectorPoint PointX="7.2552108333333329" PointY="5.7737939453125016" />
+          <ConnectorPoint PointX="7.541666666666667" PointY="5.7737939453125007" />
+          <ConnectorPoint PointX="7.708333333333333" PointY="5.7737939453125016" />
+          <ConnectorPoint PointX="9.65625" PointY="5.7737939453125016" />
+          <ConnectorPoint PointX="9.65625" PointY="12" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewF_C_OldC" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.03125" PointY="5.2975878906250031" />
+          <ConnectorPoint PointX="7.03125" PointY="19.115143229166666" />
+          <ConnectorPoint PointX="4.5" PointY="19.115143229166666" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewK_DF_AC_NewF_C" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="18.58881911458333" />
+          <ConnectorPoint PointX="6" PointY="18.58881911458333" />
+          <ConnectorPoint PointX="6" PointY="17.297587890625003" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewL_G_AB_NewG_AB" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="8.06346053846154" />
+          <ConnectorPoint PointX="4.8160744349011209" PointY="7.7473861035604177" />
+          <ConnectorPoint PointX="4.9339255650988791" PointY="7.62953497336266" />
+          <ConnectorPoint PointX="5.0625" PointY="7.5009605384615394" />
+          <ConnectorPoint PointX="5.0625" PointY="8.2254850260416674" />
+          <ConnectorPoint PointX="5.25" PointY="8.0379850260416674" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewH_AC_OldC" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.1718775" PointY="5.2975878906250031" />
+          <ConnectorPoint PointX="7.1718775" PointY="8.5814925130208337" />
+          <ConnectorPoint PointX="7.541666666666667" PointY="8.5814925130208337" />
+          <ConnectorPoint PointX="7.708333333333333" PointY="8.5814925130208337" />
+          <ConnectorPoint PointX="8" PointY="8.5814925130208337" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewM_H_AC_NewH_AC" ManuallyRouted="false">
+          <ConnectorPoint PointX="9.5" PointY="9.1439925130208337" />
+          <ConnectorPoint PointX="9.5729166666666661" PointY="9.1439925130208337" />
+          <ConnectorPoint PointX="9.7395833333333339" PointY="9.1439925130208337" />
+          <ConnectorPoint PointX="10.25" PointY="9.1439925130208337" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewH_keyAC_OldC" ManuallyRouted="false">
+          <ConnectorPoint PointX="7.25" PointY="5.2975878906250031" />
+          <ConnectorPoint PointX="7.625" PointY="5.6725878906250031" />
+          <ConnectorPoint PointX="7.625" PointY="16.115143229166666" />
+          <ConnectorPoint PointX="8" PointY="16.115143229166666" />
+        </AssociationConnector>
+        <AssociationConnector Association="EfAssociationsModel.FK_NewN_keyDEC_AB_OldC" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.8906225" PointY="5.2975878906250031" />
+          <ConnectorPoint PointX="6.8906225" PointY="12.09375" />
+          <ConnectorPoint PointX="6.947916666666667" PointY="12.09375" />
+          <ConnectorPoint PointX="7.114583333333333" PointY="12.09375" />
+          <ConnectorPoint PointX="7.541666666666667" PointY="12.09375" />
+          <ConnectorPoint PointX="7.708333333333333" PointY="12.09375" />
+          <ConnectorPoint PointX="8.25" PointY="12.09375" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
